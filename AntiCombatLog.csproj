@@ -9,6 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>FC.AntiCombatLog</RootNamespace>
     <AssemblyName>AntiCombatLog</AssemblyName>
+	<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,6 +55,10 @@
       <HintPath>lib\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>lib\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -77,5 +82,6 @@
     <None Include="lib\Rocket.Core.dll" />
     <None Include="lib\Rocket.Unturned.dll" />
     <None Include="lib\UnityEngine.dll" />
+    <None Include="lib\UnityEngine.CoreModule.dll" />
   </ItemGroup>
 </Project>

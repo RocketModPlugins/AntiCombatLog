@@ -55,13 +55,13 @@ namespace FC.AntiCombatLog
 						}
 					}
 				}
-				player.Player.SteamChannel.send("tellSlot", ESteamCall.ALL, ESteamPacket.UPDATE_RELIABLE_BUFFER, new object[]
+				player.Player.inventory.channel.send("tellSlot", ESteamCall.ALL, ESteamPacket.UPDATE_RELIABLE_BUFFER, new object[]
 				                                {
 					(byte)0,
 					(byte)0,
 					new byte[0]
 				});
-				player.Player.SteamChannel.send("tellSlot", ESteamCall.ALL, ESteamPacket.UPDATE_RELIABLE_BUFFER, new object[]
+				player.Player.inventory.channel.send("tellSlot", ESteamCall.ALL, ESteamPacket.UPDATE_RELIABLE_BUFFER, new object[]
 				                                {
 					(byte)1,
 					(byte)0,
@@ -82,40 +82,40 @@ namespace FC.AntiCombatLog
 			bool returnv = false;
 			try
 			{
-				player.Player.Clothing.askWearBackpack(0, 0, new byte[0],true);
-				for (byte p2 = 0; p2 < player.Player.Inventory.getItemCount(2); p2++)
+				player.Player.clothing.askWearBackpack(0, 0, new byte[0],true);
+				for (byte p2 = 0; p2 < player.Player.inventory.getItemCount(2); p2++)
 				{
-					player.Player.Inventory.removeItem(2, 0);
+					player.Player.inventory.removeItem(2, 0);
 				}
-				player.Player.Clothing.askWearGlasses(0, 0, new byte[0], true);
-                for (byte p2 = 0; p2 < player.Player.Inventory.getItemCount(2); p2++)
+				player.Player.clothing.askWearGlasses(0, 0, new byte[0], true);
+                for (byte p2 = 0; p2 < player.Player.inventory.getItemCount(2); p2++)
 				{
-					player.Player.Inventory.removeItem(2, 0);
+					player.Player.inventory.removeItem(2, 0);
 				}
-				player.Player.Clothing.askWearHat(0, 0, new byte[0], true);
-                for (byte p2 = 0; p2 < player.Player.Inventory.getItemCount(2); p2++)
+				player.Player.clothing.askWearHat(0, 0, new byte[0], true);
+                for (byte p2 = 0; p2 < player.Player.inventory.getItemCount(2); p2++)
 				{
-					player.Player.Inventory.removeItem(2, 0);
+					player.Player.inventory.removeItem(2, 0);
 				}
-				player.Player.Clothing.askWearMask(0, 0, new byte[0], true);
-                for (byte p2 = 0; p2 < player.Player.Inventory.getItemCount(2); p2++)
+				player.Player.clothing.askWearMask(0, 0, new byte[0], true);
+                for (byte p2 = 0; p2 < player.Player.inventory.getItemCount(2); p2++)
 				{
-					player.Player.Inventory.removeItem(2, 0);
+					player.Player.inventory.removeItem(2, 0);
 				}
-				player.Player.Clothing.askWearPants(0, 0, new byte[0], true);
-                for (byte p2 = 0; p2 < player.Player.Inventory.getItemCount(2); p2++)
+				player.Player.clothing.askWearPants(0, 0, new byte[0], true);
+                for (byte p2 = 0; p2 < player.Player.inventory.getItemCount(2); p2++)
 				{
-					player.Player.Inventory.removeItem(2, 0);
+					player.Player.inventory.removeItem(2, 0);
 				}
-				player.Player.Clothing.askWearShirt(0, 0, new byte[0], true);
-                for (byte p2 = 0; p2 < player.Player.Inventory.getItemCount(2); p2++)
+				player.Player.clothing.askWearShirt(0, 0, new byte[0], true);
+                for (byte p2 = 0; p2 < player.Player.inventory.getItemCount(2); p2++)
 				{
-					player.Player.Inventory.removeItem(2, 0);
+					player.Player.inventory.removeItem(2, 0);
 				}
-				player.Player.Clothing.askWearVest(0, 0, new byte[0], true);
-                for (byte p2 = 0; p2 < player.Player.Inventory.getItemCount(2); p2++)
+				player.Player.clothing.askWearVest(0, 0, new byte[0], true);
+                for (byte p2 = 0; p2 < player.Player.inventory.getItemCount(2); p2++)
 				{
-					player.Player.Inventory.removeItem(2, 0);
+					player.Player.inventory.removeItem(2, 0);
 				}
 				returnv = true;
 			}

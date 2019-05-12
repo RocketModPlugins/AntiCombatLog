@@ -33,7 +33,7 @@ using Rocket.Unturned.Events;
 using Rocket.Unturned.Player;
 using Rocket.Unturned.Plugins;
 using Rocket.Unturned.Chat;
-using Rocket.Core.Logging;
+using Logger = Rocket.Core.Logging.Logger;
 
 using SDG.Unturned;
 
